@@ -10,12 +10,18 @@
         </div>
         <DiscountBrand />
         <JewelryWatches />
+        <FlatSale />
+        <BagsShoes />
+        <OnlineForever />
     </div>
 </template>
 
 <script setup>
+import BagsShoes from '~/components/home/Bags&Shoes.vue';
 import CategoryItemNav from '~/components/home/CategoryItemNav.vue';
 import DiscountBrand from '~/components/home/Discount&Brand.vue';
+import FlatSale from '~/components/home/FlatSale.vue';
+import JewelryWatches from '~/components/home/jewwlry&Watches/Jewelry&Watches.vue';
+import OnlineForever from '~/components/home/OnlineForever.vue';
 import SwiperHome from '~/components/home/SwiperHome.vue';
-import JewelryWatches from '~/components/Jewelry&Watches.vue';
 </script>

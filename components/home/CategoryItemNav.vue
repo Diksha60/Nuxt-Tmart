@@ -1,10 +1,10 @@
 <template>
-    <div>
+    <div class="mt-[50px]">
         <div class="bg-black flex gap-4 py-2 px-4 text-white hover:text-red-500">
             <div class="">
-                <Icon name="mdi:menu" class="" size="25"/>
+                <Icon name="mdi:menu" class="" size="22 md:18 sm:13"/>
             </div>
-            <p class="text-white hover:text-red-500 text-[18px]">BROWSE CATEGORIES</p>
+            <p class="text-white hover:text-red-500 lg:text-[16px] sm:text-[10px] md:text-[14px]">BROWSE CATEGORIES</p>
         </div>
         <div class="flex justify-between border border-t-0 py-3 px-4 cursor-pointer" v-for="item in category1" :key="item">
             <div class="flex gap-2">

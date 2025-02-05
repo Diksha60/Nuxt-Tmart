@@ -5,7 +5,7 @@ import { Icon } from '#components';
 
 <template>
     <header class="sticky top-0 bg-white z-50 shadow-md">
-        <div class="container mx-auto grid grid-cols-4 justify-between py-[50px]">
+        <div class="container mx-auto grid grid-cols-4 justify-between pt-[50px] pb-[25px]">
             <div class="col-span-1">
                 <p class="text-4xl">TMART</p>
             </div>

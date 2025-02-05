@@ -1,57 +1,9 @@
-<!-- <template>
-  <swiper-container 
-   ref="containerRef"
-
-    :navigation="true"
-    :modules="[]"
-    
-  >
-    <swiper-slide v-for="(slide,index) in slides" :key="index" >
-      <div class="relative">
-        <img :src="slide.src" alt="a banner image" class="h-[75vh]">
-
-        <div class="absolute top-48" :class="slide.is_reverse?'right-16 && text-end':'left-12 && text-start'">
-          <p class="text-[50px] font-semibold">{{ slide.title1 }}</p>
-          <p class="text-red text-[45px] font-semibold">{{ slide.title2 }}</p>
-          <p class="text-[20px]">{{ slide.subtitle }}</p>
-        </div>
-      </div>
-    </swiper-slide>
-    
-  </swiper-container>
-</template>
-
-<script setup>
-
-const containerRef = ref(null)
-
-const swiper = useSwiper(containerRef)
-
-
-const slides = ref([
-  {
-    title1:'Men Product',
-    src: '/swiper/Swiper1.jpeg',
-    title2:'Collection',
-    subtitle: 'SHOW ME',
-    is_reverse:true,
-  },
-  {
-    title1:'New Product',
-    src: '/swiper/Swiper2.jpeg',
-    title2:'Collection',
-    subtitle: 'SHOW ME',
-    is_reverse:false,
-  },
-])
-</script> -->
-
 <template>
   <Swiper
     :modules="[Navigation]"
     :navigation="{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }"
     :loop="true"
-    class="relative"
+    class="relative mt-[50px]"
   >
     <SwiperSlide v-for="(slide, index) in slides" :key="index">
       <div class="relative">
@@ -93,5 +45,6 @@ const slides = ref([
     is_reverse: false,
   },
 ])
+
 </script>
 
