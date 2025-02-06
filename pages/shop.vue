@@ -1,4 +1,8 @@
+<script setup lang="ts">
+import ShowCarts from '~/components/ShowCarts.vue';
+
+</script>
+
 <template>
-    <h1>Shop</h1>
-    <q-btn icon="add"/>
+    <ShowCarts />
 </template>

@@ -6,7 +6,8 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/icon',
     'nuxt-swiper',
-    'nuxt-quasar-ui'
+    'nuxt-quasar-ui',
+    '@pinia/nuxt'
   ],
   css: ['~/assets/css/tailwind.css']
 })

@@ -13,6 +13,7 @@
         <FlatSale />
         <BagsShoes />
         <OnlineForever />
+        <KidsMothers />
     </div>
 </template>
 
@@ -22,6 +23,7 @@ import CategoryItemNav from '~/components/home/CategoryItemNav.vue';
 import DiscountBrand from '~/components/home/Discount&Brand.vue';
 import FlatSale from '~/components/home/FlatSale.vue';
 import JewelryWatches from '~/components/home/jewwlry&Watches/Jewelry&Watches.vue';
+import KidsMothers from '~/components/home/kids&mothres/Kids&Mothers.vue';
 import OnlineForever from '~/components/home/OnlineForever.vue';
 import SwiperHome from '~/components/home/SwiperHome.vue';
 </script>

@@ -8,22 +8,28 @@
         class="mt-10"
         @swiper="onSwiperInit"
     >
-        <SwiperSlide v-for="slide in slides" :key="slide.id">
-            <div class="mx-4 text-center">
-                <div>
-                    <img :src="slide.src" :alt="slide.title" class="w-[300px] h-[300px] object-cover">
-                </div>
+        <SwiperSlide v-for="slide in slides" :key="slide.id" @mouseover="setHover(slide.id, true)" @mouseleave="setHover(slide.id, false)">
+            <div class="text-center">
+                <img :src="slide.src" :alt="slide.title" class="w-[300px] h-[300px] object-cover">
                 <p class="mt-4 text-[15px] tracking-[0.5px] hover:text-[red]">{{ slide.title }}</p>
                 <div class="mt-2 flex justify-center gap-3">
                     <p v-if="slide.realPrice" class="text-gray-500 line-through text-[15px] font-medium">{{ slide.realPrice }}</p>
                     <p class="text-[red] text-[15px] font-medium">{{ slide.price }}</p>
                 </div>
             </div>
+
+            <div v-if="showButton[slide.id]" class="flex justify-center items-center max-w-[180px] p-3 bg-white/75 absolute top-32 left-16">
+                <q-btn @click="cart.addItam(slide)" class="text-gray-500 hover:text-[red]" flat dense size="md" icon="add" />
+                <p class="text-[20px] text-gray-500 mx-2">|</p>
+                <q-btn class="text-gray-500 hover:text-[red]" flat dense size="md" icon="shopping_cart" />
+                <p class="text-[20px] text-gray-400 mx-2">|</p>
+                <q-btn class="text-gray-500 hover:text-[red]" flat dense size="md" icon="favorite" />
+            </div>
         </SwiperSlide>
     </Swiper>
-    </template>
+</template>
     
-    <script setup>
+<script setup>
     import {
         Swiper,
         SwiperSlide
@@ -33,7 +39,19 @@
     } from 'swiper/modules'
     import 'swiper/css'
     import 'swiper/css/navigation'
-    
+import { useAddCart } from '~/store/addCart'
+
+    const cart = useAddCart()
+
+    const showButton = ref({});
+
+    const setHover = (id, value) => {
+        showButton.value = {
+            ...showButton.value,
+            [id]: value
+        };
+    };
+        
     const slides = ref([
     
         {
@@ -112,5 +130,5 @@
     
     defineExpose({ goPrev, goNext })
     
-    </script>
+</script>
     

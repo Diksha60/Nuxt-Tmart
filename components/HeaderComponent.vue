@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import { Icon } from '#components';
-
-</script>
-
 <template>
     <header class="sticky top-0 bg-white z-50 shadow-md">
         <div class="container mx-auto grid grid-cols-4 justify-between pt-[50px] pb-[25px]">
@@ -37,7 +32,9 @@ import { Icon } from '#components';
                     <Icon name="mdi:account-outline" class="text-gray-600 hover:text-red-600 w-6 h-6"/>
                 </div>
                 <div>
-                    <Icon name="mdi:cart-variant" class="text-gray-600 hover:text-red-600 w-6 h-6"/>
+                    <q-btn @click="open = !open" dense flat size="md" round icon="shopping_cart" class="text-gray-600 hover:text-red-600 w-6 h-6">
+                        <q-badge color="red" floating >{{ count.count }}</q-badge>
+                    </q-btn>
                 </div>
                 <div>
                     <Icon name="mdi:menu" class="text-gray-600 hover:text-red-600 w-6 h-6"/>
@@ -46,3 +43,14 @@ import { Icon } from '#components';
         </div>
     </header>
 </template>     
+
+<script setup>
+import { Icon } from '#components';
+
+import { useAddCart } from '~/store/addCart';
+
+const open = ref(false)
+
+const count = useAddCart()
+
+</script>
