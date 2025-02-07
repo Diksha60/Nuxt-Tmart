@@ -2,6 +2,11 @@
     <Swiper 
         ref="swiperRef"
         :slides-per-view="3"
+        :breakpoints="{ 
+            640: {slidesPerView: 1},
+            768: { slidesPerView: 1 }, 
+            1024: { slidesPerView: 3 }
+        }"
         :modules="[Navigation]" 
         :navigation="false" 
         :loop="true" 
@@ -10,7 +15,7 @@
     >
         <SwiperSlide v-for="slide in slides" :key="slide.id" @mouseover="setHover(slide.id, true)" @mouseleave="setHover(slide.id, false)">
             <div class="text-center">
-                <img :src="slide.src" :alt="slide.title" class="w-[300px] h-[300px] object-cover">
+                <img :src="slide.src" :alt="slide.title" class="w-full sm:w-full md:w-[300px] h-[400px] sm:h-[400px] md:h-[300px] object-cover">
                 <p class="mt-4 text-[15px] tracking-[0.5px] hover:text-[red]">{{ slide.title }}</p>
                 <div class="mt-2 flex justify-center gap-3">
                     <p v-if="slide.realPrice" class="text-gray-500 line-through text-[15px] font-medium">{{ slide.realPrice }}</p>

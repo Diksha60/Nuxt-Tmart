@@ -1,8 +1,8 @@
 <template>
-    <div class="grid grid-cols-3">
-        <div v-for="slide in slides" :key="slide.id" @mouseover="setHover(slide.id, true)" @mouseleave="setHover(slide.id, false)" class="relative">
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3">
+        <div v-for="slide in slides" :key="slide.id" @mouseover="setHover(slide.id, true)" @mouseleave="setHover(slide.id, false)" class="relative mt-[30px] sm:mt-[30px] md:mt-0">
             <div class="text-center">
-                <img :src="slide.src" :alt="slide.title" class="w-[300px] h-[300px] object-cover">
+                <img :src="slide.src" :alt="slide.title" class="w-full sm:w-full md:w-[300px] h-[400px] sm-h-[400px] md:h-[300px] object-cover">
                 <p class="mt-4 text-[15px] tracking-[0.5px] hover:text-[red]">{{ slide.title }}</p>
                 <div class="mt-2 flex justify-center gap-3">
                     <p v-if="slide.realPrice" class="text-gray-500 line-through text-[15px] font-medium">{{ slide.realPrice }}</p>

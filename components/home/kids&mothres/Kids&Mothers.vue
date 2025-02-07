@@ -1,7 +1,7 @@
 <template>
-    <div class="my-[100px] grid gap-7 grid-cols-9">
-    <div class="col-span-2">
-        <div class="border border-t-2 border-t-[red] px-5 py-[14px] text-center">
+    <div class="my-[50px] sm:my-[50px] md:my-[100px] grid md:gap-7 grid-cols-1 sm:grid-cols-1 md:grid-cols-9">
+    <div class="col-span-1 sm:col-span-1 md:col-span-2">
+        <div class="border border-t-2 border-t-[red] px-5 py-[14px]">
             <p class="text-black text-[16px] font-bold hover:text-red-500"> KIDS & MOTHERS</p>
         </div>
         <div class="border cursor-pointer px-7 py-8">
@@ -15,7 +15,7 @@
             <p class="mt-6 text-gray-600 hover:text-red-500 text-[15px]">Strollers</p>
         </div>
     </div>
-    <div class="col-span-7">
+    <div class="col-span-1 sm:col-span-1 md:col-span-7 mt-[50px] sm:mt-[50px] md:mt-0">
         <div class="flex justify-between px-5 py-2 border-t-2 border-t-[red] border border-b-0">
             <div>
                 <q-tabs v-model="tab" dense class="text-gray-900" active-color="red" indicator-color="white">
@@ -31,13 +31,13 @@
 
             </div>
             <div class="">
-                <a href="/" class="text-[18px] font-bold">All</a>
+                <a href="/" class="text-[14px] sm:text-[14px] md:text-[18px] font-semibold sm:font-semibold md:font-bold">All</a>
             </div>
         </div>
 
         <q-separator />
 
-        <q-tab-panels v-model="tab" animated class="mt-7">
+        <q-tab-panels v-model="tab" animated class="md:mt-7">
             <q-tab-panel name="featured">
                 <FeaturedTap />
             </q-tab-panel>

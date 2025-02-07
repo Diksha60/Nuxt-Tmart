@@ -1,6 +1,6 @@
 <template>
-<div class="mt-[100px] grid gap-7 grid-cols-9">
-    <div class="col-span-2">
+<div class="mt-[50px] sm:mt-[50px] md:mt-[100px] grid gap-0 md:gap-7 grid-cols-1 sm:grid-cols-1 md:grid-cols-9">
+    <div class="col-span-1 sm:col-span-1 md:col-span-2">
         <div class="border border-t-2 border-t-[red] px-5 py-[14px]">
             <p class=" text-black text-[16px] font-bold hover:text-red-500">JEWELRY & WATCHES</p>
         </div>
@@ -16,8 +16,8 @@
             <p class="mt-6 text-gray-600 hover:text-red-500 text-[15px]">Children's Watches</p>
         </div>
     </div>
-    <div class="col-span-7">
-        <div class="flex justify-between px-5 py-2 border-t-2 border-t-[red] border border-b-0">
+    <div class="col-span-1 sm:col-span-1 md:col-span-7 mt-[50px] sm:mt-[50px] md:mt-0">
+        <div class="flex justify-between sm:flex-wrap px-5 py-2 border-t-2 border-t-[red] border border-b-0">
             <div>
                 <q-tabs v-model="tab" dense class="text-gray-900" active-color="red" indicator-color="white">
                     <q-tab name="latest" label="Latest" class="hover:text-[red]">
@@ -31,7 +31,7 @@
                 </q-tabs>
 
             </div>
-            <div class="flex gap-2">
+            <div class="hidden md:flex gap-2">
                 <div @click="goPrev()" class="cursor-pointer">
                     <q-icon name="arrow_back_ios" size="50" class="hover:text-[red] text-bold" />
                 </div>

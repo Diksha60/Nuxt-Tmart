@@ -1,5 +1,5 @@
 <template>
-    <q-form @submit="submitData" class="flex flex-center py-[100px]">
+    <q-form @submit.prevent="submitData" class="flex flex-center mt-[100px] py-[100px]">
         <div>
             <div>
                 <p class="text-[16px] font-bold">Name:</p>
@@ -35,7 +35,7 @@
                     <q-input 
                         outlined 
                         v-model="phone" 
-                        type="text" 
+                        type="number" 
                         label="Enter Your Phone Number"
                         :rules="[ 
                             val => val && val.length > 0 || 'Please type your phoneNumber',
@@ -82,7 +82,7 @@ const submitData = () => {
         message: message.value
     })
 
-    localStorage.setItem('user', JSON.stringify(data))
+    localStorage.setItem('userCheckOut', JSON.stringify(data))
 
 }
 </script>

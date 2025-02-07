@@ -8,6 +8,11 @@ export default {
       },
     },
   },
+  variants: {
+    extend: {
+      display: ['responsive'],
+    },
+  },
   plugins: [],
 }
 

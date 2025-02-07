@@ -1,10 +1,10 @@
 <template>
-    <div class="container mx-auto">
-        <div class="grid gap-7 grid-cols-9">
-            <div class="col-span-2">
+    <div class="mt-[100pxpx] sm:mt-[100px] md:mt-[150px] container mx-auto px-28 sm:px-28 md:px-0">
+        <div class="grid gap-0 sm:gap-2 md:gap-9 grid-cols-1 sm:grid-cols-1 md:grid-cols-9">
+            <div class="col-span-1 sm:col-span-1 md:col-span-2">
                 <CategoryItemNav />
             </div>
-            <div class="col-span-7">
+            <div class="col-span-1 sm:col-span-1 md:col-span-7">
                 <SwiperHome />
             </div>
         </div>

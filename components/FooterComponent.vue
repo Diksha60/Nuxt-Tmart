@@ -1,9 +1,9 @@
 <template>
     <footer class="bg-gray-100">
-        <div class="container mx-auto">
-            <div class="grid grid-cols-4 py-[70px]">
+        <div class="container mx-auto px-28 sm:px-28 md:px-0">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 py-[70px]">
                 <!-- 1st div -->
-                <div>
+                <div class="mt-6 sm:mt-6 md:mt-0">
                     <p class="text-[40px]">TMART</p>
                     <div class="mt-2 flex">
                         <div>
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <!-- 2nd div -->
-                <div>
+                <div class="mt-6 sm:mt-6 md:mt-0">
                     <p class="text-[22px] text-gray-700">Categories</p>
                     <p class="mt-6 text-[15px] hover:text-red-500 text-gray-500"><a href="/">Men</a></p>
                     <p class="mt-2 text-[15px] hover:text-red-500 text-gray-500"><a href="/">Women</a></p>
@@ -50,7 +50,7 @@
                     <p class="mt-2 text-[15px] hover:text-red-500 text-gray-500"><a href="/">Denim</a></p>
                 </div>
                 <!-- 3rd div -->
-                <div>
+                <div class="mt-6 sm:mt-6 md:mt-0">
                     <p class="text-[22px] text-gray-700">Information</p>
                     <p class="mt-6 text-[15px] hover:text-red-500 text-gray-500"><a href="/"></a>About Us</p>
                     <p class="mt-2 text-[15px] hover:text-red-500 text-gray-500"><a href="/"></a>Contact Us</p>
@@ -60,7 +60,7 @@
                     <p class="mt-2 text-[15px] hover:text-red-500 text-gray-500"><a href="/"></a>Privacy Policy</p>
                 </div>
                 <!-- 4th div -->
-                <div>
+                <div class="mt-6 sm:mt-6 md:mt-0">
                     <p class="text-[22px] text-gray-700">Newsletter</p>
                     <p class="mt-6 text-[15px] text-gray-900 max-w-[270px]">Subscribe to our newsletter and get 10% off on your first purchase .</p>
                     <div class="mt-5 flex">
@@ -71,11 +71,11 @@
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-2 border-t-[1px] border-gray-300 py-5">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 sm:justify-items-center md:justify-items-stretch  border-t-[1px] border-gray-300 py-5">
                 <div>
                     <p class="text-gray-500 text-[15px]">© Copyright <a href="/" class="text-gray-800 hover:text-red-500">2022 Shopify</a> All Rights Reserved.</p>
                 </div>
-                <div class="flex gap-10 justify-end">
+                <div class="flex gap-10 justify-start sm:justify-start md:justify-end">
                     <div>
                         <NuxtLink class="text-gray-600 hover:text-red-600 text-[14px]" to="/">Home</NuxtLink>
                     </div>

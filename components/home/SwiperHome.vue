@@ -3,11 +3,11 @@
     :modules="[Navigation]"
     :navigation="{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }"
     :loop="true"
-    class="relative mt-[50px]"
+    class="relative sm:mt-[50px] md:mt-0"
   >
     <SwiperSlide v-for="(slide, index) in slides" :key="index">
       <div class="relative">
-        <img :src="slide.src" alt="a banner image" class="h-[68vh] w-full object-cover">
+        <img :src="slide.src" alt="a banner image" class="h-[63vh] w-full object-cover">
 
         <div class="absolute top-48" :class="slide.is_reverse ? 'right-16 text-end' : 'left-12 text-start'">
           <p class="text-[50px] font-semibold">{{ slide.title1 }}</p>
