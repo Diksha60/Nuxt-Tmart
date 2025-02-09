@@ -2,9 +2,11 @@
     <header class="bg-white/95 fixed top-0 z-50 shadow-md w-full">
         <div class="container mx-auto px-28 sm:px-28 md:px-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-between pt-7 sm:pt-7 md:pt-[50px] pb-2 sm:pb-2 md:pb-[25px] relative">
             <div class="col-span-1 sm:col-span-1 md:col-span-1">
-                <p class="text-lg sm:text-xl md:text-3xl">TMART</p>
+                <NuxtLink to="/" class="text-lg sm:text-xl md:text-3xl">
+                    TMART
+                </NuxtLink>
             </div>
-            <div class="col-span-1 sm:col-span-1 md:col-span-2 hidden md:flex justify-between">
+            <div class="col-span-1 sm:col-span-1 md:col-span-2 flex max-md:hidden justify-between">
                 <div>
                     <NuxtLink class="text-gray-600 text-[12px] sm:text-[14px] md:text-[16px] hover:text-red-600" to="/">Home</NuxtLink>
                 </div>
@@ -42,7 +44,7 @@
                     </button>
                 </div>
             </div>
-            <div v-if="isMenuOpen" class="absolute top-full right-8 bg-white shadow-lg w-48 transition-opacity duration-300 text-center">
+            <div v-if="isMenuOpen" class="md:hidden absolute top-full right-8 bg-white shadow-lg w-48 transition-opacity duration-300 text-center">
                 <NuxtLink class="block text-gray-600 hover:text-red-600 py-2 px-3 border border-b-0" to="/">Home</NuxtLink>
                 <NuxtLink class="block text-gray-600 hover:text-red-600 py-2 px-3 border border-b-0" to="/Shop">Shop</NuxtLink>
                 <NuxtLink class="block text-gray-600 hover:text-red-600 py-2 px-3 border border-b-0" to="/Portfolio">Portfolio</NuxtLink>
@@ -58,7 +60,7 @@
 </template>     
 
 <script setup>
-import { Icon } from '#components';
+import { Icon, NuxtLink } from '#components';
 
 import { useAddCart } from '~/store/addCart';
 import HomeNavs from './home/HomeNavs.vue';

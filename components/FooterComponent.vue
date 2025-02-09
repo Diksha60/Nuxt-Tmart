@@ -52,12 +52,12 @@
                 <!-- 3rd div -->
                 <div class="mt-6 sm:mt-6 md:mt-0">
                     <p class="text-[22px] text-gray-700">Information</p>
-                    <p class="mt-6 text-[15px] hover:text-red-500 text-gray-500"><a href="/"></a>About Us</p>
-                    <p class="mt-2 text-[15px] hover:text-red-500 text-gray-500"><a href="/"></a>Contact Us</p>
-                    <p class="mt-2 text-[15px] hover:text-red-500 text-gray-500"><a href="/"></a>Terms & Conditions</p>
-                    <p class="mt-2 text-[15px] hover:text-red-500 text-gray-500"><a href="/"></a>Returns & Exchanges</p>
-                    <p class="mt-2 text-[15px] hover:text-red-500 text-gray-500"><a href="/"></a>Shipping & Delivery</p>
-                    <p class="mt-2 text-[15px] hover:text-red-500 text-gray-500"><a href="/"></a>Privacy Policy</p>
+                    <p class="mt-6 text-[15px] hover:text-red-500 text-gray-500"><NuxtLink to="/aboutUs">About Us</NuxtLink></p>
+                    <p class="mt-2 text-[15px] hover:text-red-500 text-gray-500"><NuxtLink to="/contactUs">Contact Us</NuxtLink></p>
+                    <p class="mt-2 text-[15px] hover:text-red-500 text-gray-500"><NuxtLink to="/">Terms & Conditions</NuxtLink></p>
+                    <p class="mt-2 text-[15px] hover:text-red-500 text-gray-500"><NuxtLink to="/">Returns & Exchanges</NuxtLink></p>
+                    <p class="mt-2 text-[15px] hover:text-red-500 text-gray-500"><NuxtLink to="/">Shipping & Delivery</NuxtLink></p>
+                    <p class="mt-2 text-[15px] hover:text-red-500 text-gray-500"><NuxtLink to="/">Privacy Policy</NuxtLink></p>
                 </div>
                 <!-- 4th div -->
                 <div class="mt-6 sm:mt-6 md:mt-0">

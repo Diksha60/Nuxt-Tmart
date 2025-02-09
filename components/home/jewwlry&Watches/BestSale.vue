@@ -13,7 +13,7 @@
         class="mt-10"
         @swiper="onSwiperInit"
     >
-        <SwiperSlide v-for="slide in slides" :key="slide.id" @mouseover="setHover(slide.id, true)" @mouseleave="setHover(slide.id, false)">
+        <SwiperSlide class="relative" v-for="slide in slides" :key="slide.id" @mouseover="setHover(slide.id, true)" @mouseleave="setHover(slide.id, false)">
             <div class="text-center">
                 <img :src="slide.src" :alt="slide.title" class="w-full sm:w-full md:w-[300px] h-[400px] sm:h-[400px] md:h-[300px] object-cover">
                 <p class="mt-4 text-[15px] tracking-[0.5px] hover:text-[red]">{{ slide.title }}</p>
@@ -23,7 +23,10 @@
                 </div>
             </div>
 
-            <div v-if="showButton[slide.id]" class="flex justify-center items-center max-w-[180px] p-3 bg-white/75 absolute top-32 left-16">
+            <div 
+                v-show="showButton[slide.id]" 
+                class="flex justify-center items-center max-w-[180px] p-3 bg-white/90 absolute top-1/3 sm:top-1/3 md:top-32 left-1/4 sm:left-1/4 md:left-16"
+            >
                 <q-btn @click="cart.addItam(slide)" class="text-gray-500 hover:text-[red]" flat dense size="md" icon="add" />
                 <p class="text-[20px] text-gray-500 mx-2">|</p>
                 <q-btn class="text-gray-500 hover:text-[red]" flat dense size="md" icon="shopping_cart" />

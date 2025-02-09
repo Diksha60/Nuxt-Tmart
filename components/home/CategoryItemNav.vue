@@ -1,27 +1,27 @@
 <template>
     <div class="">
-        <div class="bg-black flex sm:1 md:4 gap-1 py-2 px-4 text-white hover:text-red-500">
+        <div class="bg-black flex gap-4 py-2 px-4 text-white hover:text-red-500">
             <div class="">
-                <Icon name="mdi:menu" class="w-4 sm:w-4 md:w-6 h-4 sm:h-4 md:h-6" />
+                <Icon name="mdi:menu" class="w-6 h-6" />
             </div>
-            <p class="text-white hover:text-red-500 text-[10px] sm:text-[10px] md:text-[16px]">BROWSE CATEGORIES</p>
+            <p class="text-white hover:text-red-500 text-[16px]">BROWSE CATEGORIES</p>
         </div>
         <div class="flex justify-between border border-t-0 py-3 px-4 cursor-pointer" v-for="item in category1" :key="item">
             <div class="flex gap-2">
                 <div>
-                    <Icon class="text-gray-600 sm:w-0 md:w-4 sm:h-0 md:h-4" :name="item.icon1"/>
+                    <Icon class="text-gray-600 w-4 h-4" :name="item.icon1"/>
                 </div>
-                <p class="text-[11px] sm:text-[11px] md:text-[15px] text-gray-600 hover:text-red-500">{{ item.title }}</p>
+                <p class="text-[15px] text-gray-600 hover:text-red-500">{{ item.title }}</p>
             </div>
             <div>
-                <Icon :name="item.icon2" class="sm:w-0 md:w-4 sm:h-0 md:h-4"/>
+                <Icon :name="item.icon2" class="w-4 h-4"/>
             </div>
         </div>
         <div class="flex gap-2 border border-t-0 py-3 px-4 cursor-pointer" v-for="category in category2" :key="category.id">
             <div>
-                <Icon class="text-gray-600 sm:w-0 md:w-4 sm:h-0 md:h-4" :name="category.icon"/>
+                <Icon class="text-gray-600 w-4 h-4" :name="category.icon"/>
             </div>
-            <p class="text-[11px] sm:text-[11px] md:text-[15px] text-gray-600 hover:text-red-500">{{ category.title }}</p>
+            <p class="text-[15px] text-gray-600 hover:text-red-500">{{ category.title }}</p>
         </div>
     </div>
 </template>

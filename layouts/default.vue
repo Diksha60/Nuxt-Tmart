@@ -13,7 +13,7 @@ const store = useAddCart()
         <HeaderComponent />
         <NuxtPage />
         <FooterComponent />
-        <div v-if="store.showCart" class="inset-0 fixed top-0 z-50">
+        <div v-if="store.showCart" class="inset-0 fixed top-0 z-50 min-h-screen">
             <ShowCarts />
         </div>
     </div>

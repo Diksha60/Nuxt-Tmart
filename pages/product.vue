@@ -1,7 +1,9 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
-    <div class="container mx-auto">
-        <div class="mt-[200px]">
-            <p>Product</p>
-        </div>
+    <div class="mt-[100px] sm:mt-[100px] md:mt-[150px] container mx-auto px-28 sm:px-28 md:px-0 min-h-screen">
+        <h1>Product</h1>
     </div>
 </template>

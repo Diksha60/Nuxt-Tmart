@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-[100pxpx] sm:mt-[100px] md:mt-[150px] container mx-auto px-28 sm:px-28 md:px-0">
+    <div class="mt-[100px] sm:mt-[100px] md:mt-[150px] container mx-auto px-28 sm:px-28 md:px-0">
         <div class="grid gap-0 sm:gap-2 md:gap-9 grid-cols-1 sm:grid-cols-1 md:grid-cols-9">
             <div class="col-span-1 sm:col-span-1 md:col-span-2">
                 <CategoryItemNav />

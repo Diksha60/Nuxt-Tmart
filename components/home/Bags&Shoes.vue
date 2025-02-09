@@ -31,7 +31,7 @@
                 </q-tabs>
 
             </div>
-            <div class="hidden md:flex gap-2">
+            <div class="flex max-md:hidden gap-2">
                 <div @click="goPrev()" class="cursor-pointer">
                     <q-icon name="arrow_back_ios" size="50" class="hover:text-[red] text-bold" />
                 </div>
