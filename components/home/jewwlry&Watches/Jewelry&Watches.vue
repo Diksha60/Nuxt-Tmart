@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class="col-span-1 sm:col-span-1 md:col-span-7 mt-[50px] sm:mt-[50px] md:mt-0">
-        <div class="flex justify-between sm:flex-wrap px-5 py-2 border-t-2 border-t-[red] border border-b-0">
+        <div class="flex justify-between items-center sm:flex-wrap px-5 py-2 border-t-2 border-t-[red] border border-b-0">
             <div>
                 <q-tabs v-model="tab" dense class="text-gray-900" active-color="red" indicator-color="white">
                     <q-tab name="latest" label="Latest" class="hover:text-[red]">
@@ -31,7 +31,7 @@
                 </q-tabs>
 
             </div>
-            <div class="flex max-md:hidden gap-2">
+            <div class="flex max-md:hidden mb-1 gap-2">
                 <div @click="goPrev()" class="cursor-pointer">
                     <q-icon name="arrow_back_ios" size="50" class="hover:text-[red] text-bold" />
                 </div>

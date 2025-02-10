@@ -24,18 +24,18 @@
                         <p class="ml-10 text-gray-500 text-[15px]">+012 345 678 102</p>
                     </div>
                     <!-- div with social media icon -->
-                    <div class="flex gap-8 mt-4">
-                        <div class="border px-1 border-gray-500 rounded-full">
-                            <Icon name="mdi:alpha-f" class="text-gray-500"/>
+                    <div class="ml-3 flex gap-5 mt-6">
+                        <div class="border border-gray-400 hover:border-[red] hover:bg-[red] rounded-full px-[6px] pt-[5px] text-gray-400 hover:text-white">
+                            <Icon name="gg:facebook" size="15"/>
                         </div>
-                        <div class="border px-1 border-gray-500 rounded-full">
-                            <Icon name="mdi:google-plus" class="text-gray-500"/>
+                        <div class="border border-gray-400 hover:border-[red] hover:bg-[red] rounded-full px-[6px] pt-[5px] text-gray-400 hover:text-white">
+                            <Icon name="la:google-plus" size="15"/>
                         </div>
-                        <div class="border px-1 border-gray-500 rounded-full">
-                            <Icon name="mdi:twitter" class="text-gray-500"/>
+                        <div class="border border-gray-400 hover:border-[red] hover:bg-[red] rounded-full px-[6px] pt-[5px] text-gray-400 hover:text-white">
+                            <Icon name="mdi:twitter" size="15"/>
                         </div>
-                        <div class="border px-1 border-gray-500 rounded-full">
-                            <Icon name="mdi:instagram" class="text-gray-500"/>
+                        <div class="border border-gray-400 hover:border-[red] hover:bg-[red] rounded-full px-[6px] pt-[5px] text-gray-400 hover:text-white">
+                            <Icon name="icomoon-free:instagram" size="15"/>
                         </div>
                     </div>
                 </div>
